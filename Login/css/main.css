@@ -223,7 +223,7 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.3);
+  /* background: rgba(0,0,0,0.3); */
 }
 
 
@@ -239,6 +239,7 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   padding: 303px 65px 40px 65px;
 }
 
@@ -262,7 +263,8 @@ iframe {
 
 .wrap-input100 {
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 20;
   border: 1px solid #e6e6e6;
 }
 
