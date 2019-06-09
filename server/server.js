@@ -7,14 +7,14 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 
-var dbconnection = mysql.createConnection({
+var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'wjsn13blossoms',
     database: 'testdb'
 });
 
-dbconnection.connect(function(err){
+connection.connect(function(err){
     if(err){
         console.error('error connecting: ' + err.stack);
         return;
@@ -39,7 +39,7 @@ app.post('/login',function(req,res){
   var pwd = req.body.pwd;
 
   var sql = `SELECT * FROM user_info WHERE username = ?`;
-  dbconnection.query(sql,[name],function(error,results,fields){
+  connection.query(sql,[name],function(error,results,fields){
       if (results.length==0){
           res.render('login.html',{ alert:true});
       }
@@ -75,7 +75,6 @@ app.post('/register', function(req,res){
   });
   res.redirect('/login');
 });
-
 
 
 
