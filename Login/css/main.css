@@ -240,7 +240,8 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  padding: 303px 65px 40px 65px;
+  margin-top: 10%;
+  padding: 50px 70px 170px 70px;
 }
 
 .login100-form-title {
@@ -263,8 +264,7 @@ iframe {
 
 .wrap-input100 {
   width: 100%;
-  position: absolute;
-  top: 20;
+  position: relative;
   border: 1px solid #e6e6e6;
 }
 
