@@ -206,7 +206,7 @@ iframe {
 /*==================================================================
 [ login more ]*/
 .login100-more {
-  width: 50%;
+  width: 60%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -232,7 +232,7 @@ iframe {
 [ Form ]*/
 
 .login100-form {
-  width: 50%;
+  width: 40%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -243,8 +243,8 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Poppins-Regular;
-  font-size: 20px;
+  font-family: Poppins-SemiBold;
+  font-size: 40px;
   color: #555555;
   line-height: 1.2;
   text-transform: uppercase;
